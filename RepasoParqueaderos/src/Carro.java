@@ -1,11 +1,21 @@
 public class Carro {
-    //Identificador único del carro
-    String placa;
-    //Hora de ingreso del carro
-    int horaEntrada;
+    // Mi clase para poder tener varios carros
 
-    public carro(){
+    private String placa;
+    private int horaEntrada;
 
+    // Mediante el constructor es que voy a asignar o setear los valores
+    public Carro(String placa, int horaEntrada) {
+        this.placa = placa;
+        this.horaEntrada = horaEntrada;
     }
 
+    // Metodos solo para leer
+    public String getPlaca() {
+        return placa;
+    }
+
+    public int getHoraEntrada() {
+        return horaEntrada;
+    }
 }
