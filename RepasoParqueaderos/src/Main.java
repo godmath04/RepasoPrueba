@@ -70,7 +70,8 @@ public class Main {
     }
 
     private static void consultarPuestosDisponibles(Parqueadero parqueadero) {
-        JOptionPane.showMessageDialog(null, "Puestos disponibles: " + parqueadero.consultarPuestosDisponibles());
+        JOptionPane.showMessageDialog(null, "Puestos disponibles: " + parqueadero.consultarPuestosDisponibles() +
+                "\nIngresos totales: $" + parqueadero.getIngresos());
     }
 
     private static void avanzarReloj(Parqueadero parqueadero) {
